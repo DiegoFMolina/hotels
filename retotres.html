@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book it! - Discover great places for you</title>
+    <link rel="stylesheet" href="retotres.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1 class="title">Book it!</h1>
+        <div class="filter__container">
+          <div class="filter__grid">
+            <select
+              class="filter__countries filter-icon"
+              name="filter__countries "
+              id="filter-countries"
+            >
+              <option value="all">All countries</option>
+              <option value="countrie1">Argentina</option>
+              <option value="countrie2">Brazil</option>
+              <option value="countrie3">Chile</option>
+              <option value="countrie4">Uruguay</option>
+            </select>
+            <input
+              class="filter__datefrom filter-icon"
+              name="date-from"
+              id="date-from"
+              min="nan-nan-nan"
+              max
+              type="date"
+              value
+            />
+            <input
+              class="filter__dateto filter-icon"
+              name="date-to"
+              id="date-to"
+              type="date"
+              min
+              value
+            />
+            <select
+              class="filter__prices filter-icon"
+              name="filter__prices"
+              id="filter-prices"
+            >
+              <option value="all">All prices</option>
+              <option value="price1">$</option>
+              <option value="price2">$$</option>
+              <option value="price3">$$$</option>
+              <option value="price4">$$$$</option>
+            </select>
+            <select
+              class="filter__sizes filter-icon"
+              name="filter__sizes"
+              id="filter-sizes"
+            >
+              <option value="all">All sizes</option>
+              <option value="size">Small</option>
+              <option value="size">Medium</option>
+              <option value="size">Large</option>
+            </select>
+            <button class="filter__clear" onclick="document.location.reload();">Clear</button>
+          </div>
+        </div>
+        <div class="foundMessage__container">
+          <p class="foundMessage__title">We have found for you...</p>
+          <p class="foundMessage__content">
+            All sizes hotels of all category prices, in all countries.
+          </p>
+        </div>
+      </header>
+      <section
+        class="infoMessage"
+        style="
+          transition: all 0.5s ease-out 0s;
+          height: 0px;
+          margin-top: -0.2rem;
+          opacity: 0;
+          padding: 0px;
+        "
+      >
+        <p class="info__tex"></p>
+      </section>
+    </div>
+  </body>
+</html>
